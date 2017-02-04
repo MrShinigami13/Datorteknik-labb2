@@ -9,10 +9,10 @@
 #include <stdio.h>
 #include <math.h>
 
-int intcheck(double variable)
+double intcheck(double variable)
 {
 	int intpartofvariable = (int)variable;
-	return (variable == intpartofvariable);
+	return (variable / intpartofvariable);
 }
 
 int is_prime(int n){
