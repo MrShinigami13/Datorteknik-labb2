@@ -27,7 +27,7 @@ void print_primes(int n){
 	{
 		if (calc == COLUMNS)
 		{
-			printf("%10d ", \n);
+			printf("%10d\n ", );
 			print_number(i);
 		}
 		else
