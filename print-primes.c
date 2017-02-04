@@ -23,17 +23,11 @@ void print_primes(int n){
   // the number of columns is stated in the define
   // COLUMNS
 
-  printf("%10d ", 2);
-  printf("%10d ", 3);
-  printf("%10d ", 5);
-  printf("%10d ", 7);
-  printf("%10d ", 11);
-  printf("%10d ", 13);
-  printf("\n");
-  printf("%10d ", 17);
-  printf("%10d ", 19);
+	for (int i = 0; i < n; i++)
+	{
+		print_number(i);
 
-  printf("\n");
+	}
 }
 
 // 'argc' contains the number of program arguments, and
