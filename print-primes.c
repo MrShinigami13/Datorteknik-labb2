@@ -30,11 +30,13 @@ void print_primes(int n){
 		{
 			printf("\n");
 			print_number(i);
+			calc = 0;
 		}
 		else
 		{
 			print_number(i);
 		}
+
 		calc++;
 	}
 }
