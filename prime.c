@@ -24,10 +24,10 @@ int is_prime(int n){
 		
 		double prime_check = n / i;	// check för att kolla om det är ett primtal
 		prime = intcheck(prime_check);
-		if (prime == 1)
+		/*if (prime == 1)
 		{
 			break;
-		}
+		} */
 	}
 
 
