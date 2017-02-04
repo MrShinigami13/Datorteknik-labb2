@@ -77,8 +77,9 @@ void print_primes(int n){
 
 	for (int i = 1; i < n; i++)
 	{
+
 		
-		int return_value = is_prime(i);
+		int return_value = is_prime(i);	//#FIXME allt som e kvar är att lägga in undantagen för 1 och 3
 		if (return_value == 1)
 		{
 			print_number(i);
