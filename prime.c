@@ -20,6 +20,7 @@ int is_prime(int n){
 	double n_sqrt = sqrt(n);
 	for (int i = 0; i <= n_sqrt; i++)
 	{
+		double sqrt(double x);
 		double prime_check = n / i;
 		prime = intcheck(prime_check);
 	}
