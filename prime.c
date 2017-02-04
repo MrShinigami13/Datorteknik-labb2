@@ -34,11 +34,11 @@ int is_prime(int n){
 
 	if(prime == 1)	//kollar om det är ett primtal och skrimer ut 0 eller 1 beroente på resultatet
 	{
-		return 0; // ja det är primtal
+		return 1; // ja det är primtal
 	}
 	else
 	{
-		return 1;	// nej det är inte ett primtal
+		return 0;	// nej det är inte ett primtal
 	}
   
 }
