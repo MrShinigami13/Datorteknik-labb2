@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <math.h>
 
+
 double intcheck(double variable)
 {
 	int intpartofvariable = (int)variable;
