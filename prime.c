@@ -9,14 +9,14 @@
 #include <stdio.h>
 #include<math.h>
 
-bool intcheck(double variable)
+int intcheck(double variable)
 {
 	int intpartofvariable = (int)variable;
 	return (variable == intpartofvariable);
 }
 
 int is_prime(int n){
-	bool prime;	//variabel för att retunera 0 eller 1 beroende om det är ett primtal eller inte
+	int prime;	//variabel för att retunera 0 eller 1 beroende om det är ett primtal eller inte
 	double n_sqrt = sqrt(n);
 	for (i = 0; i <= n_sqrt; i++)
 	{
@@ -26,7 +26,7 @@ int is_prime(int n){
 
 
 
-	if(prime)
+	if(prime == 1)
 	{
 		return 1;
 	}
