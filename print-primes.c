@@ -34,6 +34,7 @@ void print_primes(int n){
 		{
 			print_number(i);
 		}
+		calc++
 	}
 }
 
