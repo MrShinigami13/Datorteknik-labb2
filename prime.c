@@ -5,7 +5,7 @@
  This file is in the public domain.
 */
 
-
+// uggift 1 klar nu :)
 #include <stdio.h>
 #include <math.h>
 
