@@ -27,7 +27,31 @@ void print_number(int n)
 
 void print_sieves(int n)
 {
-	print_number(n);
+	int bool_array[n];
+	for (int i = 0; i < n; i++)	// skapa en array med bara 1:or
+	{
+		bool_array[i] = 1;
+	}
+	for (int i = 2; i < sqrt(n); i++)	// göra om den till en array med blandade värden för att sedan skriva ut primtal
+	{
+		if (bool_array[i] == 1)
+		{
+			int y = 0;
+			for (double x =( pow(i,2)+y*i) ; y < n; y++)
+			{
+				bool_array[i] = 0;
+			}
+		}
+		
+	}
+	for (int i = 0; i < n; i++)
+	{
+		if (bool_array[n] == 1)
+		{
+			print_number((n+1));
+		}
+		
+	}
 }
 
 
