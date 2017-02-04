@@ -36,7 +36,8 @@ void print_sieves(int n)
 		printf("debug2");
 	}
 	printf("debug3");
-	for (int i = 2; i < sqrt(n); i++)	// göra om den till en array med blandade värden för att sedan skriva ut primtal
+	double condition_varible = sqrt(n);
+	for (int i = 2; i < condition_varible; i++)	// göra om den till en array med blandade värden för att sedan skriva ut primtal
 	{
 		printf("debug4");
 		if (bool_array[i] == 1)
