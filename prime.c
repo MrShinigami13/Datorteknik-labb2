@@ -12,18 +12,18 @@
 double intcheck(double variable)
 {
 	int intpartofvariable = (int)variable;
-	double return_value = (double)intpartofvariable / variable;
+	double return_value = ((double)intpartofvariable / variable);
 	return (return_value);
 }
 
-int is_prime(int n){
+int is_prime(double n){
 	double prime = 1;	//variabel för att retunera 0 eller 1 beroende om det är ett primtal eller inte
 	double n_sqrt;
 	n_sqrt = sqrt(n);
-	for (int i = 2; i >= n_sqrt; i++) // här görs räkngen om det är primtal
+	for (double i = 2; i <= n_sqrt; i++) // här görs räkngen om det är primtal
 	{
 		
-		double prime_check = n / i;	// check för att kolla om det är ett primtal
+		double prime_check = (n / i);	// check för att kolla om det är ett primtal
 		prime = intcheck(prime_check);
 		if (prime == 1)
 		{
