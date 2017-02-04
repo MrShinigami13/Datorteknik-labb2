@@ -19,20 +19,20 @@ int is_prime(int n){
 	double prime = 0;	//variabel för att retunera 0 eller 1 beroende om det är ett primtal eller inte
 	double n_sqrt;
 	n_sqrt = sqrt(n);
-	for (int i = 2; i <= n_sqrt; i++) // här görs räkngen om det är primtal
+	for (int i = 2; i >= n_sqrt; i++) // här görs räkngen om det är primtal
 	{
 		
 		double prime_check = n / i;	// check för att kolla om det är ett primtal
 		prime = intcheck(prime_check);
-		/*if (prime == 1)
+		if (prime == 1)
 		{
 			break;
-		} */
+		} 
 	}
 
 
 
-	if(prime == 1)	//kollar om det är ett primtal och skrimer ut 0 eller 1 beroente på resultatet
+	if(prime != 1)	//kollar om det är ett primtal och skrimer ut 0 eller 1 beroente på resultatet
 	{
 		return 1; // ja det är primtal
 	}
