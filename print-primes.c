@@ -23,9 +23,10 @@ void print_primes(int n){
   // the number of columns is stated in the define
   // COLUMNS
 	int calc = 1;
+	int colu = COLUMNS;
 	for (int i = 1; i < n; i++)
 	{
-		if (calc == COLUMNS)
+		if (calc == colu)
 		{
 			printf("\n");
 			print_number(i);
