@@ -11,6 +11,11 @@
 
 #define COLUMNS 6
 
+void print_number(int n)
+{
+	printf("%10d ", n);
+}
+
 
 void print_primes(int n){
   // Should print out all prime numbers less than 'n'
