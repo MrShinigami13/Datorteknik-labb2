@@ -22,11 +22,18 @@ void print_primes(int n){
   // with the following formatting. Note that
   // the number of columns is stated in the define
   // COLUMNS
-
-	for (int i = 0; i < n; i++)
+	int calc = 1;
+	for (int i = 1; i < n; i++)
 	{
-		print_number(i);
-
+		if (calc == COLUMNS)
+		{
+			printf("%10d ", \n);
+			print_number(i);
+		}
+		else
+		{
+			print_number(i);
+		}
 	}
 }
 
