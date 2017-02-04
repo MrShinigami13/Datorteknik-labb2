@@ -12,7 +12,8 @@
 double intcheck(double variable)
 {
 	int intpartofvariable = (int)variable;
-	return (variable / intpartofvariable);
+	double return_value = (double)intpartofvariable / variable;
+	return (return_value);
 }
 
 int is_prime(int n){
