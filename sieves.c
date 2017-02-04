@@ -10,7 +10,7 @@
 int calc = 1;
 void print_number(int n)
 {
-	printf("%10d ", "debug10");
+	printf("debug10");
 	int colu = COLUMNS;
 	if (calc == colu)	// byter rad efter "COLUMNS" antal siffror
 	{
@@ -29,35 +29,35 @@ void print_number(int n)
 void print_sieves(int n)
 {
 	int bool_array[n];
-	printf("%10d ", "debug1");
+	printf("debug1");
 	for (int i = 0; i < n; i++)	// skapa en array med bara 1:or
 	{
 		bool_array[i] = 1;
-		printf("%10d ", "debug2");
+		printf("debug2");
 	}
-	printf("%10d ", "debug3");
+	printf("debug3");
 	for (int i = 2; i < sqrt(n); i++)	// göra om den till en array med blandade värden för att sedan skriva ut primtal
 	{
-		printf("%10d ", "debug4");
+		printf("debug4");
 		if (bool_array[i] == 1)
 		{
-			printf("%10d ", "debug5");
+			printf("debug5");
 			int y = 0;
 			for (double x =( pow(i,2)+y*i) ; y < n; y++)
 			{
-				printf("%10d ", "debug6");
+				printf("debug6");
 				bool_array[i] = 0;
 			}
 		}
 		
 	}
-	printf("%10d ", "debug7");
+	printf("debug7");
 	for (int i = 0; i < n; i++)
 	{
-		printf("%10d ", "debug8");
+		printf("debug8");
 		if (bool_array[n] == 1)
 		{
-			printf("%10d ", "debug9");
+			printf("debug9");
 			print_number((n+1));
 		}
 		
