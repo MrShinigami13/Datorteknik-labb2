@@ -14,6 +14,7 @@ int calc = 1;
 
 void print_number(int n)
 {
+	int colu = COLUMNS;
 	if (calc == colu)	// byter rad efter "COLUMNS" antal siffror
 	{
 		printf("\n");
@@ -35,7 +36,7 @@ void print_primes(int n){
   // the number of columns is stated in the define
   // COLUMNS
 
-	int colu = COLUMNS;
+
 	for (int i = 1; i < n; i++)
 	{
 		
