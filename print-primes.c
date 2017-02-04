@@ -10,10 +10,22 @@
 #include <stdlib.h>
 
 #define COLUMNS 6
+int calc = 1;
 
 void print_number(int n)
 {
-	printf("%10d ", n);
+	if (calc == colu)	// byter rad efter "COLUMNS" antal siffror
+	{
+		printf("\n");
+		printf("%10d ", n);
+		calc = 1;
+	}
+	else
+	{
+		printf("%10d ", n);
+		calc++;
+	}
+	
 }
 
 
@@ -22,22 +34,13 @@ void print_primes(int n){
   // with the following formatting. Note that
   // the number of columns is stated in the define
   // COLUMNS
-	int calc = 1;
+
 	int colu = COLUMNS;
 	for (int i = 1; i < n; i++)
 	{
-		if (calc == colu)
-		{
-			printf("\n");
+		
 			print_number(i);
-			calc = 0;
-		}
-		else
-		{
-			print_number(i);
-		}
-
-		calc++;
+		
 	}
 }
 
