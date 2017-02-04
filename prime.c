@@ -18,7 +18,8 @@ int intcheck(double variable)
 int is_prime(int n){
 	int prime;	//variabel för att retunera 0 eller 1 beroende om det är ett primtal eller inte
 	double n_sqrt;
-	n_sqrt = sqrt(n);
+	double n_new = n;
+	n_sqrt = sqrt(n_new);
 	for (int i = 0; i <= n_sqrt; i++)
 	{
 		
