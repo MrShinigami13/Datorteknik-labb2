@@ -20,7 +20,7 @@ int is_prime(int n){
 	double n_sqrt;
 	double n_new = n;
 	n_sqrt = sqrt(n_new);
-	for (int i = 0; i <= n_sqrt; i++)
+	for (int i = 0; i <= n_sqrt; i++) // lite nya komentarer för att på en ny commimt
 	{
 		
 		double prime_check = n / i;
