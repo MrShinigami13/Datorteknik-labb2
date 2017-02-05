@@ -44,15 +44,16 @@ void print_sieves(int n)
 		{
 			printf("debug5");
 			double sieves_counter = (i + 1);
+			double x = 0;
 			
-			for (int y = 0; y < n; y++)
+			for (int y = 0; x < n; y++)
 			{
-				double x = ((sieves_counter*sieves_counter) + (y*sieves_counter)); //#FIXME bara fel med matten här ni
+				x = ((sieves_counter*sieves_counter) + (y*sieves_counter)); //#FIXME bara fel med matten här ni
 				printf("%10d ", x);
 				int z = (int)x;
 				printf("%10d ", z);
 				printf("debug6");
-				bool_array[i] = 0;
+				bool_array[x] = 0;
 			}
 		}
 		
