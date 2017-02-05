@@ -46,9 +46,10 @@ void print_sieves(int n)
 			int y = 0;
 			for (int y = 0; y < n; y++)
 			{
-				int x = (int)(pow(i, 2) + (y*i));
+				double x = (pow(i, 2) + (y*i));
+				int z = (int)x;
 				printf("debug6");
-				bool_array[x] = 0;
+				bool_array[z] = 0;
 			}
 		}
 		
