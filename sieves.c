@@ -63,7 +63,7 @@ void print_sieves(int n)
 	for (int i = 0; i < n; i++)
 	{
 		printf("debug8");
-		if (bool_array[n] == 1)
+		if (bool_array[i] == 1)
 		{
 			printf("debug9");
 			int print_variable = (i + 1);
