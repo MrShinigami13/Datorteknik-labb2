@@ -37,14 +37,14 @@ void print_sieves(int n)
 	}
 	printf("debug3");
 	double condition_varible = sqrt(n);
-	for (int i = 2; i < condition_varible; i++)	// göra om den till en array med blandade värden för att sedan skriva ut primtal
+	for (double i = 2; i < condition_varible; i++)	// göra om den till en array med blandade värden för att sedan skriva ut primtal
 	{
 		printf("debug4");
 		if (bool_array[i] == 1)
 		{
 			printf("debug5");
 			
-			for (int y = 0; y < n; y++)
+			for (double y = 0; y < n; y++)
 			{
 				double x = ((i*i) + (y*i)); //#FIXME bara fel med matten här ni
 				int z = (int)x;
