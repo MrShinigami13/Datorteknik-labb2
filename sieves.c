@@ -46,7 +46,7 @@ void print_sieves(int n)
 			
 			for (int y = 0; y < n; y++)
 			{
-				double x = (i*i) + (y*i)); #FIXME bara fel med matten här ni
+				double x = (i*i) + (y*i)); //#FIXME bara fel med matten här ni
 				int z = (int)x;
 				printf("debug6");
 				bool_array[z] = 0;
