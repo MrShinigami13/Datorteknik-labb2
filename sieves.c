@@ -37,30 +37,33 @@ void print_sieves(int n)
 	}
 	//printf("debug3");
 	double condition_varible = sqrt(n);
-	for (int i = 1; i < condition_varible; i++)	// göra om den till en array med blandade värden för att sedan skriva ut primtal
+	for (int i = 2; i <= condition_varible; i++)	// göra om den till en array med blandade värden för att sedan skriva ut primtal
 	{
 		//printf("debug4");
 		if (bool_array[i] == 1)
 		{
 			//printf("debug5");
-			double sieves_counter = (i + 1);
-			double x = 0;
-			int	z = 0;
+			double sieves_counter = (i);
+			double j = 0;
+			double y = 0;
+			int j_int = 0;
 
-			for (int y = 0; z < n; y++)
+			while ( j < n)
 			{
-				x = ((sieves_counter*sieves_counter) + (y*sieves_counter)); //#FIXME bara fel med matten här ni
-				z = (int)x;
-				//printf("%10d ", z);
+				j = ((sieves_counter*sieves_counter) + (y*sieves_counter));
+				y++;
+				j_int = (int)j;
+				//printf("%10d ", j);
 				//printf("debug6");
 				//printf("%10d ", n);
-				bool_array[z] = 0;
+				bool_array[j_int] = 0;
+
 			}
 		}
 
 	}
 	//printf("debug7");
-	for (int i = 0; i < n; i++)
+	for (int i = 2; i < n; i++)
 	{
 		//printf("debug8");
 		if (bool_array[i] == 1)
