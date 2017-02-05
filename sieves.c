@@ -45,11 +45,12 @@ void print_sieves(int n)
 			printf("debug5");
 			double sieves_counter = (i + 1);
 			double x = 0;
+			int	z = 0;
 			
 			for (int y = 0; z < n; y++)
 			{
 				x = ((sieves_counter*sieves_counter) + (y*sieves_counter)); //#FIXME bara fel med matten här ni
-				int z = (int)x;
+				z = (int)x;
 				printf("%10d ", z);
 				printf("debug6");
 				printf("%10d ", n);
