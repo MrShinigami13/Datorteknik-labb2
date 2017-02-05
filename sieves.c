@@ -49,7 +49,6 @@ void print_sieves(int n)
 			for (int y = 0; x < n; y++)
 			{
 				x = ((sieves_counter*sieves_counter) + (y*sieves_counter)); //#FIXME bara fel med matten här ni
-				printf("%10d ", x);
 				int z = (int)x;
 				printf("%10d ", z);
 				printf("debug6");
