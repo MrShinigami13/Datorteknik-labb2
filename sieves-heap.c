@@ -28,11 +28,13 @@ void print_number(int n)
 
 void print_sieves(int n)
 {
-	double bool_array[n];
+	//double &n_h[n]; // bool_array är bytt mot n_h!!!!!
+	int *n_h = malloc(n*sizeof(int));
 	//printf("debug1");
 	for (int i = 0; i < n; i++)	// skapa en array med bara 1:or
 	{
-		bool_array[i] = 1;
+		n_h[i] = 1;
+
 		//printf("debug2");
 	}
 	//printf("debug3");
@@ -40,7 +42,7 @@ void print_sieves(int n)
 	for (int i = 2; i <= condition_varible; i++)	// göra om den till en array med blandade värden för att sedan skriva ut primtal
 	{
 		//printf("debug4");
-		if (bool_array[i] == 1)
+		if (n_h[i] == 1)
 		{
 			//printf("debug5");
 			double sieves_counter = (i);
@@ -56,7 +58,7 @@ void print_sieves(int n)
 				//printf("%10d ", j);
 				//printf("debug6");
 				//printf("%10d ", n);
-				bool_array[j_int] = 0;
+				n_h[j_int] = 0;
 
 			}
 		}
@@ -66,7 +68,7 @@ void print_sieves(int n)
 	for (int i = 2; i < n; i++)
 	{
 		//printf("debug8");
-		if (bool_array[i] == 1)
+		if (n_h[i] == 1)
 		{
 			//printf("debug9");
 			int print_variable = (i);
@@ -74,6 +76,7 @@ void print_sieves(int n)
 		}
 
 	}
+			free(n_h);
 }
 
 
