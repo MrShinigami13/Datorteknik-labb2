@@ -28,7 +28,7 @@ void print_number(int n)
 
 void print_sieves(int n)
 {
-	int bool_array[n];
+	double bool_array[n];
 	printf("debug1");
 	for (int i = 0; i < n; i++)	// skapa en array med bara 1:or
 	{
@@ -46,7 +46,7 @@ void print_sieves(int n)
 			int y = 0;
 			for (int y = 0; y < n; y++)
 			{
-				int x = (pow(i, 2) + y*i);
+				double x = (pow(i, 2) + (y*i));
 				printf("debug6");
 				bool_array[x] = 0;
 			}
