@@ -53,7 +53,7 @@ void print_sieves(int n)
 				int z = (int)x;
 				printf("%10d ", z);
 				printf("debug6");
-				bool_array[x] = 0;
+				bool_array[z] = 0;
 			}
 		}
 		
