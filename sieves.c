@@ -46,12 +46,13 @@ void print_sieves(int n)
 			double sieves_counter = (i + 1);
 			double x = 0;
 			
-			for (int y = 0; x < n; y++)
+			for (int y = 0; z < n; y++)
 			{
 				x = ((sieves_counter*sieves_counter) + (y*sieves_counter)); //#FIXME bara fel med matten här ni
 				int z = (int)x;
 				printf("%10d ", z);
 				printf("debug6");
+				printf("%10d ", n);
 				bool_array[z] = 0;
 			}
 		}
@@ -64,7 +65,8 @@ void print_sieves(int n)
 		if (bool_array[n] == 1)
 		{
 			printf("debug9");
-			print_number((n+1));
+			int print_variable = (i + 1);
+			print_number(print_variable);
 		}
 		
 	}
