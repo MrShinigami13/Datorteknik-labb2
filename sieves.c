@@ -37,6 +37,7 @@ void print_sieves(int n)
 	}
 	printf("debug3");
 	double condition_varible = sqrt(n);
+	printf(condition_varible);
 	for (int i = 2; i < condition_varible; i++)	// göra om den till en array med blandade värden för att sedan skriva ut primtal
 	{
 		printf("debug4");
@@ -73,9 +74,10 @@ void print_sieves(int n)
 // 'argv' is an array of char pointers, where each
 // char pointer points to a null-terminated string.
 int main(int argc, char *argv[]) {
-	if (argc == 2)
+	/*if (argc == 2)
 		print_sieves(atoi(argv[1]));
-	else
+	else*/
 		printf("Please state an interger number.\n");
+
 	return 0;
 }
