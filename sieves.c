@@ -10,7 +10,7 @@
 int calc = 1;
 void print_number(int n)
 {
-	printf("debug10");
+	//printf("debug10");
 	int colu = COLUMNS;
 	if (calc == colu)	// byter rad efter "COLUMNS" antal siffror
 	{
@@ -29,47 +29,47 @@ void print_number(int n)
 void print_sieves(int n)
 {
 	double bool_array[n];
-	printf("debug1");
+	//printf("debug1");
 	for (int i = 0; i < n; i++)	// skapa en array med bara 1:or
 	{
 		bool_array[i] = 1;
-		printf("debug2");
+		//printf("debug2");
 	}
-	printf("debug3");
+	//printf("debug3");
 	double condition_varible = sqrt(n);
 	for (int i = 1; i < condition_varible; i++)	// göra om den till en array med blandade värden för att sedan skriva ut primtal
 	{
-		printf("debug4");
+		//printf("debug4");
 		if (bool_array[i] == 1)
 		{
-			printf("debug5");
+			//printf("debug5");
 			double sieves_counter = (i + 1);
 			double x = 0;
 			int	z = 0;
-			
+
 			for (int y = 0; z < n; y++)
 			{
 				x = ((sieves_counter*sieves_counter) + (y*sieves_counter)); //#FIXME bara fel med matten här ni
 				z = (int)x;
-				printf("%10d ", z);
-				printf("debug6");
-				printf("%10d ", n);
+				//printf("%10d ", z);
+				//printf("debug6");
+				//printf("%10d ", n);
 				bool_array[z] = 0;
 			}
 		}
-		
+
 	}
-	printf("debug7");
+	//printf("debug7");
 	for (int i = 0; i < n; i++)
 	{
-		printf("debug8");
+		//printf("debug8");
 		if (bool_array[i] == 1)
 		{
-			printf("debug9");
-			int print_variable = (i + 1);
+			//printf("debug9");
+			int print_variable = (i);
 			print_number(print_variable);
 		}
-		
+
 	}
 }
 
