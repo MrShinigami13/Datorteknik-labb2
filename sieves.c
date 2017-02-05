@@ -43,13 +43,13 @@ void print_sieves(int n)
 		if (bool_array[i] == 1)
 		{
 			printf("debug5");
-			int y = 0;
+			
 			for (int y = 0; y < n; y++)
 			{
-				//double x = (pow(i, 2) + (y*i)); #FIXME bara fel med matten här ni
-				//int z = (int)x;
+				double x = (i*i) + (y*i)); #FIXME bara fel med matten här ni
+				int z = (int)x;
 				printf("debug6");
-				bool_array[i] = 0;
+				bool_array[z] = 0;
 			}
 		}
 		
